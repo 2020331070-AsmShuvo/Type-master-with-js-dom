@@ -27,7 +27,32 @@ function setBackgroundColorById(id){
     const elem = document.getElementById(id);
     elem.classList.add('bg-orange-400');
 }
-function removeBachgroundColorById(id){
+function setBackgroundColorByIdOfWrong(id){
+    const elem = document.getElementById(id);
+    elem.classList.add('bg-red-400');
+}
+function removeBackgroundColorById(id){
     const elem = document.getElementById(id);
     elem.classList.remove('bg-orange-400');
+}
+function removeBackgroundColorByIdOfWrong(id){
+    const elem = document.getElementById(id);
+    elem.classList.remove('bg-red-400');
+}
+
+function getTextElementValueById(id){
+    const elem = document.getElementById(id);
+    const elemTxt = elem.innerText;
+    const val = parseFloat(elemTxt);
+    return val;
+}
+function setTextElementValueById(id, val){
+    const elem = document.getElementById(id);
+    elem.innerText=val;
+}
+
+function getElementTextById(id){
+    const elem = document.getElementById(id);
+    const text = elem.innerText;
+    return text;
 }
